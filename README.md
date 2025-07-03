@@ -1,6 +1,48 @@
-Esse projeto é um dos iniciais que vai me ajudar a estudar web design. 
-Até agora estou aprendendo a usar o Git e Github.
--
+# Projeto de Receitas 🍳
 
-Versão 2 - Este projeto ja contem estilo em css. Adicionado arquivo style.css.
-Versão 1 - Este projeto se trata de uma lista de receitas mostradas apenas em html.
+Este projeto é um dos iniciais que vai me ajudar a estudar **web design**.  
+Até agora estou aprendendo a usar o **Git** e **GitHub**.
+
+---
+
+## 📌 Versões
+
+### **Versão 2** (Atual)  
+✅ Adicionado arquivo `style.css` com estilização.  
+✅ Melhorias na estrutura HTML.  
+
+### **Versão 1**  
+🔹 Lista de receitas apenas em HTML (sem estilização).  
+
+---
+
+## 🛠 Tecnologias Utilizadas  
+- HTML5  
+- CSS3  
+- Git & GitHub  
+
+---
+
+## 📂 Estrutura do Projeto  
+```
+projeto-receitas/
+├── index.html
+├── style.css
+└── README.md
+```
+
+---
+
+## 🔍 Objetivos  
+- Praticar **semântica HTML**.  
+- Aprender **CSS** (flexbox, grid, responsividade).  
+- Dominar fluxos do Git (`commit`, `push`, `branches`).  
+
+---
+
+## 📝 Licença  
+Este projeto está sob a licença MIT.  
+
+---
+
+Feito com 💙 por [Thiago Gonçalves Santana](https://github.com/thiagoSantz).
