@@ -40,9 +40,4 @@ projeto-receitas/
 
 ---
 
-## 📝 Licença  
-Este projeto está sob a licença MIT.  
-
----
-
 Feito com 💙 por [Thiago Gonçalves Santana](https://github.com/thiagoSantz).
