@@ -1,0 +1,95 @@
+body{
+    background-color: oklch(28.133% 0.03019 254.745);
+    font-family: helvetica system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+h2 {
+    font-size: 16px;
+}
+p {
+    font-size: 12px;
+    margin-top: 0;
+}
+
+.conteudo {
+    display: flex;
+    background-color: oklch(31.715% 0.03533 255.371) ;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    margin: 16px;
+    box-sizing: border-box;
+    display: block;
+}
+
+img {
+            max-width: 50%; /* Define a largura máxima da imagem (ajuste %) */
+            border-radius: 8px;
+            height: auto; /* Mantém a proporção */
+            display: block; /* Remove espaços indesejados abaixo da imagem */
+            margin: 0 auto; /* Centraliza a imagem dentro do contêiner */
+}
+
+ol {
+    padding-left: 20px;
+    list-style: none; /* Remove os números padrão DE VERDADE */
+    counter-reset: item; /* Inicializa o contador */    
+}
+
+ol li {
+    font-size: 14px;
+    margin-bottom: 15px;
+    line-height: 1.5;
+    padding-left: 10px;
+    position: relative;
+    counter-increment: item; /* Incrementa o contador */
+}
+ol li:before {
+       content: counter(item) "."; /* Exibe apenas o número + ponto */
+        position: absolute;
+        left: -16px;
+        top: 0;
+        color: #3498db; /* Cor dos números */
+        font-weight: bold;
+}
+
+ul {
+        padding-left: 20px;
+        list-style-type: none; /* Remove as bolinhas padrão */
+}
+ul li {
+    font-size: 14px;
+    margin-bottom: 15px;
+    line-height: 1.5;
+    padding-left: 10px;
+    position: relative;
+
+}
+
+ul li:before {
+        content: "•"; /* Usa um símbolo customizado (pode ser um emoji, ícone, etc.) */
+        position: absolute;
+        left: 0;
+        top: 0;
+        color: #e74c3c; /* Cor vermelha para diferenciar */
+        font-size: 1.2em;
+}
+
+a {
+        color: #a6ead7;                 /* Azul moderno (pode trocar a cor!) */
+        text-decoration: none;          /* Remove o sublinhado */
+        font-weight: 500;               /* Peso da fonte (não tão fino) */
+        transition: all 0.3s ease;      /* Suaviza efeitos de hover */
+        border-bottom: 2px solid transparent; /* Prepara borda invisível */
+    }
+
+    /* Efeito ao passar o mouse */
+    a:hover {
+        color: #3c45e7;                 /* Vermelho (ou outra cor de destaque) */
+        border-bottom: 2px solid #e74c3c; /* Sublinhado apenas no hover */
+    }
