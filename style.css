@@ -8,9 +8,15 @@ body{
 
 h1 {
     text-align: center;
+    padding: 0px;
+    gap: 0px;
+    margin: 0px;
 }
 h2 {
+    text-align: center;
     font-size: 16px;
+    margin: 0px;
+    padding: 10px 10px 50px 10px;
 }
 p {
     font-size: 12px;
@@ -18,27 +24,18 @@ p {
 }
 
 .conteudo {
-    display: flex;
-    background-color: oklch(31.715% 0.03533 255.371) ;
+    background-color: oklch(31.715% 0.03533 255.371);
     border-radius: 0.5rem;
-    padding: 0.5rem;
+    padding: 1.0rem;
     margin: 16px;
     box-sizing: border-box;
-    display: block;
-}
-
-img {
-            max-width: 50%; /* Define a largura máxima da imagem (ajuste %) */
-            border-radius: 8px;
-            height: auto; /* Mantém a proporção */
-            display: block; /* Remove espaços indesejados abaixo da imagem */
-            margin: 0 auto; /* Centraliza a imagem dentro do contêiner */
+    /* REMOVI o text-align: center daqui */
 }
 
 ol {
     padding-left: 20px;
-    list-style: none; /* Remove os números padrão DE VERDADE */
-    counter-reset: item; /* Inicializa o contador */    
+    list-style: none;
+    counter-reset: item;
 }
 
 ol li {
@@ -47,49 +44,115 @@ ol li {
     line-height: 1.5;
     padding-left: 10px;
     position: relative;
-    counter-increment: item; /* Incrementa o contador */
+    counter-increment: item;
 }
 ol li:before {
-       content: counter(item) "."; /* Exibe apenas o número + ponto */
-        position: absolute;
-        left: -16px;
-        top: 0;
-        color: #3498db; /* Cor dos números */
-        font-weight: bold;
+    content: counter(item) ".";
+    position: absolute;
+    left: -16px;
+    top: 0;
+    color: #3498db;
+    font-weight: bold;
 }
 
 ul {
-        padding-left: 20px;
-        list-style-type: none; /* Remove as bolinhas padrão */
+    padding-left: 0;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;  /* Isso centraliza os itens */
 }
+
 ul li {
     font-size: 14px;
     margin-bottom: 15px;
     line-height: 1.5;
-    padding-left: 10px;
     position: relative;
-
-}
-
-ul li:before {
-        content: "•"; /* Usa um símbolo customizado (pode ser um emoji, ícone, etc.) */
-        position: absolute;
-        left: 0;
-        top: 0;
-        color: #e74c3c; /* Cor vermelha para diferenciar */
-        font-size: 1.2em;
 }
 
 a {
-        color: #a6ead7;                 /* Azul moderno (pode trocar a cor!) */
-        text-decoration: none;          /* Remove o sublinhado */
-        font-weight: 500;               /* Peso da fonte (não tão fino) */
-        transition: all 0.3s ease;      /* Suaviza efeitos de hover */
-        border-bottom: 2px solid transparent; /* Prepara borda invisível */
-    }
+    color: #a6ead7;
+    text-decoration: none;
+    text-align: center;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    border-bottom: 2px solid transparent;
+    display: inline-block;  /* MUDEI para inline-block */
+}
 
-    /* Efeito ao passar o mouse */
-    a:hover {
-        color: #3c45e7;                 /* Vermelho (ou outra cor de destaque) */
-        border-bottom: 2px solid #e74c3c; /* Sublinhado apenas no hover */
-    }
+a:before {                   /* ADICIONE - bullet no link */
+    content: "• ";
+    color: #e74c3c;
+    font-size: 1.2em;
+}
+
+a {
+    color: #a6ead7;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    display: inline-block;
+    text-align: center;
+}
+
+a span {
+    display: inline-block;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.3s ease;
+}
+
+a:hover span {
+    border-bottom: 2px solid #e74c3c;
+}
+
+a:hover {
+    color: #3c45e7;
+}
+
+a:hover img {
+    opacity: 1;
+    transform: scale(1.01);
+}
+
+img {
+    max-width: 300px;
+    width: 60%;
+    padding: 10px;
+    border-radius: 18px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    transition: all 0.3s ease;
+    opacity: 0.7;
+}
+
+footer {
+    background-color: oklch(25% 0.02 254.745);
+    color: rgba(255, 255, 255, 0.7);
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    border-top: 2px solid rgba(166, 234, 215, 0.2);
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+footer a {
+    color: #a6ead7;
+    text-decoration: none;
+    font-weight: 600;
+    border-bottom: 1px solid transparent;
+    transition: all 0.3s ease;
+}
+
+footer a::before {
+    content: none;
+}
+
+footer a:hover {
+    color: #3c45e7;
+    border-bottom: 1px solid #3c45e7;
+}

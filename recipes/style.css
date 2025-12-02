@@ -12,6 +12,9 @@ h1 {
 h2 {
     font-size: 16px;
 }
+h3 {
+    font-size: 16px;
+}
 p {
     font-size: 12px;
     margin-top: 0;
@@ -21,10 +24,12 @@ p {
     display: flex;
     background-color: oklch(31.715% 0.03533 255.371) ;
     border-radius: 0.5rem;
-    padding: 0.5rem;
+    padding: 1.5rem;
     margin: 16px;
     box-sizing: border-box;
     display: block;
+    justify-content: center;
+    align-items: center;
 }
 
 img {
